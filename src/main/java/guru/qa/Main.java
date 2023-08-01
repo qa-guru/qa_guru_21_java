@@ -16,12 +16,6 @@ public class Main {
         float varFloat = 0.0F;
         double varDouble = 0.0;
 
-        class Human {
-            int age;
-            boolean isClever;
-            char size;
-        }
-
         // Операторы
         // Арифметические + - * / % ++ --
         int var = 10;
@@ -52,11 +46,25 @@ public class Main {
 
         if (sex == 'm') {
             childName = "Valera";
-        } else {
+        } else if (sex == 'w') {
             childName = "Maria";
+        } else {
+            childName = "Undefined";
         }
 
-
+        switch (name) {
+            case "Valera" : {
+                System.out.println("Happy Valera!");
+                break;
+            }
+            case "Maria" : {
+                System.out.println("Happy Maria!");
+                break;
+            }
+            default: {
+                System.out.println("Don`t known (");
+            }
+        }
 
 
         String statement = "Hello " + " World!";
